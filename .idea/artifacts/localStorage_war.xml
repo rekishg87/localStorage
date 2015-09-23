@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="localStorage:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="localStorage.war">
+      <element id="artifact" artifact-name="localStorage:war exploded" />
+    </root>
+  </artifact>
+</component>
