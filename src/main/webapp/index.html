@@ -23,15 +23,10 @@
         </div>
     </div>
 
-    <p>Hello {{ userGreeting }}</p>
-    <p>Hello {{ load() }}</p>
+    <p>Hello {{ userGreeting }} {{ load() }}</p>
 
     <div class="storage">
-        <button ng-click="save()">Save</button>
-        <button ng-click="load()">Load</button>
         <button ng-click="delete()">Delete</button>
-        <br>
-        {{ data }}
     </div>
 </body>
 </html>

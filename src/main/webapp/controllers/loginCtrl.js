@@ -14,14 +14,13 @@ angular.module("localStorage", ["ngStorage"])
 
                 for(var i = 0; i < $scope.user.length; i++) {
                     if($scope.username === $scope.user[i].username &&
-                        $scope.password === $scope.user[i].password)
+                        $scope.password === $scope.user[i].password) {
 
-                            $scope.userGreeting = $scope.user[i].username;
                             $scope.userGreeting = $scope.save();
-
-
-    }
-}
+                            $scope.userGreeting = $scope.user[i].username;
+                    }
+                }
+        }
 
         $scope.save = function() {
             $localStorage.userGreeting = $scope.username;
